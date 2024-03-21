@@ -6,7 +6,7 @@ terraform {
     storage_account_name = "tffilebackup"
     container_name       = "statefilestorage-container"
     key                  = "backup.tfstate"
-    access_key = "eBfXWFsjNOHO1XZmfha0Xzk4/VMK3LALgVQwgVOnuHBkq6X+CFyf1i0u6Sc/GWTJUdLDjIrRf+sx+AStELGsdw=="
+    # access_key = "eBfXWFsjNOHO1XZmfha0Xzk4/VMK3LALgVQwgVOnuHBkq6X+CFyf1i0u6Sc/GWTJUdLDjIrRf+sx+AStELGsdw=="
 
 
 
