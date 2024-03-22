@@ -14,8 +14,8 @@ env:
  ARM_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
  ARM_SUBSCRIPTION_ID: ${{secrets.AZURE_SUBSCRIPTION_ID}}
  ARM_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
- ROOT_PATH: '../../sourcecode/terraform'
- TERRAFORM_CLI_PATH: /home/runner/work/_temp/44db4e71-62ba-4899-81ab-aa90ac150d05
+ ROOT_PATH: ../../sourcecode/terraform
+ 
 
 permissions:
   contents: read
