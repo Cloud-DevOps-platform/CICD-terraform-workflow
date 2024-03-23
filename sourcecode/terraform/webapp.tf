@@ -12,10 +12,6 @@ resource "azurerm_linux_web_app" "nodejs_web_app" {
   location            = azurerm_resource_group.CDX-platform.location
   service_plan_id     = azurerm_service_plan.cdxserviceplan.id
 
-  site_config {
-    linux_fx_version = "node|16-lts"
-  }
-  app_settings = {
-    "WEBSITE_NODE_DEFAULT_VERSION" = "~16"
-  }
+  site_config {}
+
 }
