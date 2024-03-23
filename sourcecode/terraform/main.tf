@@ -10,7 +10,7 @@ resource "azurerm_resource_group" "CDX-platform" {
 # creating the storage account
 
 resource "azurerm_storage_account" "statefilestorage" {
-  name                     = "infraCDX-backup"
+  name                     = "infracdx-backup"
   resource_group_name      = azurerm_resource_group.CDX-platform.name
   location                 = azurerm_resource_group.CDX-platform.location
   account_tier             = "Standard"
