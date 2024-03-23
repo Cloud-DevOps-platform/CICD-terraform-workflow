@@ -46,11 +46,8 @@ jobs:
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-    # # storing the state file in github secrets
-    # - name: Store Terraform state file in a Github Action secret
-    #   run: |
-    #    echo "tf_state" = [{ azurem = { connection_string = \"${{ secrets.TF_STATE }}\" } }] }" >> ${{ steps.terraform.outputs.workspace_dir }}/backend.tf
-
+    
+    
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
@@ -106,12 +103,8 @@ jobs:
         - name: Terraform apply
           run: terraform apply --auto-approve
           working-directory: ${{env.ROOT_PATH}}
-          env:
-            TF_STATE: ${{ secrets.TF_STATE}}
-      # storing the state file in github secrets
-        - name: Store Terraform state file in a Github Action secret
-          run: |
-           echo "tf_state" = [{ azurem = { connection_string = \"${{ secrets.TF_STATE }}\" } }] }" >> ${{ steps.terraform.outputs.workspace_dir }}/backend.tf
+
+
           
 
 
