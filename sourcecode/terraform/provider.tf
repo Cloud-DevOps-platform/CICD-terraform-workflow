@@ -15,3 +15,7 @@ provider "azurerm" {
   features {}
 
 }
+
+provider "github" {
+  organization = "Cloud-DevOps-platform"
+}
