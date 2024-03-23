@@ -19,11 +19,11 @@ resource "azurerm_storage_account" "statefilestorage" {
 
 }
 
-# creating the blob container in the storage account
+# # creating the blob container in the storage account
 
-resource "azurerm_storage_container" "stateblobstorage" {
-  name                  = "cdxtffile-container"
-  storage_account_name  = azurerm_storage_account.statefilestorage.name
-  container_access_type = "blob"
+# resource "azurerm_storage_container" "stateblobstorage" {
+#   name                  = "cdxtffile-container"
+#   storage_account_name  = azurerm_storage_account.statefilestorage.name
+#   container_access_type = "blob"
 
-}
+# }
