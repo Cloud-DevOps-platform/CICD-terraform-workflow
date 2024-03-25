@@ -2,11 +2,10 @@
 
 terraform {
   backend "azurerm" {
-    resource_group_name  = "CDX-platform"
-    storage_account_name = "infraCDX-backup"
-    container_name       = "cdxtffile-container"
+    resource_group_name  = "resourcecdx"
+    storage_account_name = "statefilebackup"
+    container_name       = "storagecontiner"
     key                  = "terraformconfig.tfstate"
-
 
   }
 }
