@@ -7,6 +7,7 @@ resource "azurerm_resource_group" "firstcdxresource" {
 }
 
 
+
 # # creating the storage account
 
 # resource "azurerm_storage_account" "backupstorage" {
