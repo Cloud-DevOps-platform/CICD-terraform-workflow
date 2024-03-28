@@ -8,17 +8,17 @@ resource "azurerm_resource_group" "firstcdxresource" {
 
 
 
-# # creating the storage account
+# creating the storage account
 
-# resource "azurerm_storage_account" "backupstorage" {
-#   name                     = "statefilebackup"
-#   resource_group_name      = azurerm_resource_group.firstcdxresource.name
-#   location                 = azurerm_resource_group.firstcdxresource.location
-#   account_tier             = "Standard"
-#   account_replication_type = "LRS"
+resource "azurerm_storage_account" "backupstorage" {
+  name                     = "statefilebackup"
+  resource_group_name      = azurerm_resource_group.firstcdxresource.name
+  location                 = azurerm_resource_group.firstcdxresource.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
 
 
-# }
+}
 
 # # creating the blob container in the storage account
 
