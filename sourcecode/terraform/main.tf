@@ -20,11 +20,11 @@ resource "azurerm_storage_account" "backupstorage" {
 
 }
 
-# # creating the blob container in the storage account
+# creating the blob container in the storage account
 
-# resource "azurerm_storage_container" "blobstorage" {
-#   name                  = "storagecontiner"
-#   storage_account_name  = azurerm_storage_account.backupstorage.name
-#   container_access_type = "blob"
+resource "azurerm_storage_container" "blobstorage" {
+  name                  = "storagecontiner"
+  storage_account_name  = azurerm_storage_account.backupstorage.name
+  container_access_type = "blob"
 
-# }
+}
