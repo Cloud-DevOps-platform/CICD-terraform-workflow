@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 env:
-  ROOT_PATH : '../sourcecode/terraform'
+  ROOT_PATH : 'sourcecode/terraform'
 
 jobs:
   terraform:
