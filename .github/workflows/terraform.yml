@@ -44,6 +44,11 @@ jobs:
       run: terraform init
       working-directory: ${{env.ROOT_PATH}}
 
+    # storing the state file in the github workflow
+    - uses: sturlabragason/terraform_state_artifact@v1
+      with:
+          encryptionkey: ${{ secrets.encryptionkey }}
+
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
       run: terraform fmt -check
