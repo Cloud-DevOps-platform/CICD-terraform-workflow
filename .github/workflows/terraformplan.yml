@@ -20,6 +20,7 @@ ARM_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
 
 
 
+
 permissions:
   contents: read
 
