@@ -51,6 +51,7 @@ jobs:
     - name: Terraform Plan
       run: terraform plan -input=false
       working-directory: ${{env.ROOT_PATH}}
+      
 
     # initialize init again before we apply
 
