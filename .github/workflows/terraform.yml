@@ -52,7 +52,7 @@ jobs:
       run: terraform plan -input=false
       working-directory: ${{env.ROOT_PATH}}
       
-      jobs:
+    jobs:
         terraform:
           name: 'terraform apply'
           runs-on: ubuntu-latest
