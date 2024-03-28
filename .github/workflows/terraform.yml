@@ -16,7 +16,7 @@ env:
   ROOT_PATH : 'sourcecode/terraform'
 
 jobs:
-  terraform plan:
+  terraform_plan:
     name: 'Terraform plan'
     runs-on: ubuntu-latest
     environment: production
@@ -55,7 +55,7 @@ jobs:
 
     # initialize init again before we apply
 
-  terraform apply:
+  terraform_apply:
     name: 'Terraform apply'
     runs-on: ubuntu-latest
     needs: [terraform plan]
