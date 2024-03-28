@@ -16,7 +16,7 @@ env:
   ROOT_PATH : 'sourcecode/terraform'
 
 jobs:
-  terraform:
+   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
