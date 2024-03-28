@@ -54,12 +54,12 @@ jobs:
       run: terraform plan -input=false
       working-directory: ${{env.ROOT_PATH}}
 
-jobs:
-  terraform:
-    name: 'Terraform apply'
-    runs-on: ubuntu-latest
-    needs: [terraform]
-    environment: deployment
+ jobs:
+   terraform:
+     name: 'Terraform apply'
+     runs-on: ubuntu-latest
+     needs: [terraform]
+     environment: deployment
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
