@@ -1,10 +1,10 @@
 # creating the resource group
 
-# resource "azurerm_resource_group" "firstcdxresource" {
-#   name     = "resourcecdx"
-#   location = "Eastus"
+resource "azurerm_resource_group" "firstcdxresource" {
+  name     = "resourcecdx"
+  location = "Eastus"
 
-# }
+}
 
 
 
