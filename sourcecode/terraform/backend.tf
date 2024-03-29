@@ -2,9 +2,9 @@
 
 terraform {
   backend "azurerm" {
-    resource_group_name  = "cdxplatform"
-    storage_account_name = "state5566filebackup"
-    container_name       = "storagecontiner"
+    resource_group_name  = "prod-deployment"
+    storage_account_name = "remotebackendstate"
+    container_name       = "storagecontinerstate"
     key                  = "terraformconfig.tfstate"
   }
 
